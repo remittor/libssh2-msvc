@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{703CBFFB-0BFB-3B50-B88E-BDFCE35683CC}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>libssh2</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <Import Project="..\LibSSH2.vsprops" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(VC_STATIC_RTL)'=='Debug|1'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(VC_STATIC_RTL)'=='Release|1'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SrcDir)\src\agent.c" />
+    <ClCompile Include="$(SrcDir)\src\bcrypt_pbkdf.c" />
+    <ClCompile Include="$(SrcDir)\src\blowfish.c" />
+    <ClCompile Include="$(SrcDir)\src\channel.c" />
+    <ClCompile Include="$(SrcDir)\src\comp.c" />
+    <ClCompile Include="$(SrcDir)\src\crypt.c" />
+    <ClCompile Include="$(SrcDir)\src\global.c" />
+    <ClCompile Include="$(SrcDir)\src\hostkey.c" />
+    <ClCompile Include="$(SrcDir)\src\keepalive.c" />
+    <ClCompile Include="$(SrcDir)\src\kex.c" />
+    <ClCompile Include="$(SrcDir)\src\knownhost.c" />
+    <ClCompile Include="$(SrcDir)\src\libgcrypt.c" />
+    <ClCompile Include="$(SrcDir)\src\mac.c" />
+    <ClCompile Include="$(SrcDir)\src\mbedtls.c" />
+    <ClCompile Include="$(SrcDir)\src\misc.c" />
+    <ClCompile Include="$(SrcDir)\src\openssl.c" />
+    <ClCompile Include="$(SrcDir)\src\os400qc3.c" />
+    <ClCompile Include="$(SrcDir)\src\packet.c" />
+    <ClCompile Include="$(SrcDir)\src\pem.c" />
+    <ClCompile Include="$(SrcDir)\src\publickey.c" />
+    <ClCompile Include="$(SrcDir)\src\scp.c" />
+    <ClCompile Include="$(SrcDir)\src\session.c" />
+    <ClCompile Include="$(SrcDir)\src\sftp.c" />
+    <ClCompile Include="$(SrcDir)\src\transport.c" />
+    <ClCompile Include="$(SrcDir)\src\userauth.c" />
+    <ClCompile Include="$(SrcDir)\src\version.c" />
+    <ClCompile Include="$(SrcDir)\src\wincng.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B2395BC7-EC6C-34CD-9009-D4C7A2719708}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SrcDir)\src\agent.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\bcrypt_pbkdf.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\blowfish.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\channel.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\comp.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\crypt.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\global.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\hostkey.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\keepalive.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\kex.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\knownhost.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\libgcrypt.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\mac.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\mbedtls.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\misc.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\openssl.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\os400qc3.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\packet.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\pem.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\publickey.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\scp.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\session.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\sftp.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\transport.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\userauth.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\version.c"  ><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="$(SrcDir)\src\wincng.c"  ><Filter>Source Files</Filter></ClCompile>
+  </ItemGroup>
+</Project>
