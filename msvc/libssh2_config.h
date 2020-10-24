@@ -4,6 +4,10 @@
 #define WIN32
 #endif
 
+#ifndef LIBSSH2_WIN32
+#define LIBSSH2_WIN32
+#endif
+
 #ifndef _CRT_SECURE_NO_DEPRECATE
 #define _CRT_SECURE_NO_DEPRECATE 1
 #endif

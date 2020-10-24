@@ -35,6 +35,7 @@
       </AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4068;4244;4267</DisableSpecificWarnings>
       <PreprocessorDefinitions>
+        LIBSSH2_WIN32;
         _CRT_SECURE_NO_WARNINGS;
         _CRT_DEPRECATED_NO_WARNINGS;
         _REENTRANT;

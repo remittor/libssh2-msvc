@@ -10,7 +10,7 @@
 #undef HAVE_LIBCRYPT32
 
 /* to make a symbol visible */
-#undef LIBSSH2_API
+#define LIBSSH2_API
 
 /* Enable clearing of memory before being freed */
 #undef LIBSSH2_CLEAR_MEMORY
